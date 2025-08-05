@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My First Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #d4fc79, #96e6a1);
+      color: #333;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1, h2 {
+      color: #2c3e50;
+    }
+
+    .highlight {
+      background-color: yellow;
+      font-weight: bold;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .fun-title {
+      font-size: 2em;
+      animation: slidein 3s infinite alternate;
+      margin-bottom: 20px;
+    }
+
+    @keyframes slidein {
+      from { transform: translateX(-20px); }
+      to { transform: translateX(20px); }
+    }
+
+    img {
+      border-radius: 10px;
+      margin-top: 10px;
+      transition: transform 0.3s;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #3498db;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: #1abc9c;
+    }
+
+    iframe {
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    hr {
+      margin: 30px 0;
+      border: none;
+      height: 2px;
+      background: #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="fun-title">🌸 Hello, World! 🎌</div>
+
+    <h1>About Me</h1>
+    <p><i>I love <span class="highlight">HTML</span></i></p>
+
+    <hr>
+
+    <p><mark>It's beautiful</mark></p>
+    <p>I can use images:</p>
+    <img src="https://wallpaperaccess.com/full/2111331.jpg" alt="cat" width="300" height="300"/>
+
+    <hr>
+
+    <h2>I can use links</h2>
+    <a href="https://www.bing.com/search?q=cat" target="_blank">Search for Cats</a>
+
+    <hr>
+
+    <h2><mark>Embedded Chatbot (iframe)</mark></h2>
+    <iframe src="https://landbot.online/v3/H-3079950-I95YWKVTYTUVA5FG/index.html" width="300" height="300"></iframe>
+  </div>
+</body>
+</html>
